@@ -1,0 +1,275 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background: black;
+}
+/* html
+{
+  scroll-behavior: smooth;
+} */
+.header
+{
+  background-image: url(https://images.pexels.com/photos/35537/child-children-girl-happy.jpg?cs=srgb&dl=pexels-bess-hamiti-35537.jpg&fm=jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.header .container
+{
+  padding-top: 20px;
+  padding-left: 60px;
+}
+.header .container nav img
+{
+  width: 80px;
+  height: 30px;
+  border-radius: 50%;
+}
+.header .container nav
+{
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  padding-right: 30px;
+}
+.header .container li
+{
+  font-size: 20px;
+  list-style: none;
+  display: inline-flex;
+  margin-left: auto;
+  padding-left: 15px;
+}
+/* https://media.istockphoto.com/photos/mountain-landscape-picture-id517188688?k=20&m=517188688&s=612x612&w=0&h=i38qBm2P-6V4vZVEaMy_TaTEaoCMkYhvLCysE7yJQ5Q= */
+nav ul  a
+{
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  font-size: 18px;
+}
+ nav ul a::after
+{
+  content:'';
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+/* https://images.pexels.com/photos/35537/child-children-girl-happy.jpg?cs=srgb&dl=pexels-bess-hamiti-35537.jpg&fm=jpg */
+
+ nav ul a:hover::after
+{
+  width: 100%;
+}
+
+.header-text
+{
+  margin-top: 25%;
+  font-size: 30px;
+}
+span
+{
+  color: red;
+}
+/* ------------------about---------------- */
+.about
+{
+
+  padding-top:40px;
+}
+.about .container .col-1{
+  padding: 50px 0;
+  flex-basis: 35%;
+}
+.about .container .col-1 img{
+  border-radius: 15px;
+  margin-left: 70px;
+  margin-right: 15px;
+  height: 20vh;
+}
+.about .container .col-2
+{
+  flex-basis: 90%;
+}
+.about .container .col-2 .tit
+{
+  margin-top: 0;
+  text-align: center;
+  font-family: sans-serif;
+  padding-top: 10px;
+  font-size: 40px;
+  font-weight: 600;
+}
+.about .container .col-2 .tit1
+{
+  margin-top: 0;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+.about .container
+{
+  display: flex;
+  justify-content: space-between;
+
+}
+.about .container1
+{
+  display: flex;
+  justify-content: space-between;
+
+}
+.about .container1 .col-3
+{
+  flex-basis: 90%;
+}
+.about .container1 .col-4
+{
+  padding: 50px 0;
+  flex-basis: 35%;
+}
+.col-3 .tit1
+{
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+.col-3 .tit
+{
+  margin-top: 0;
+  font-family: sans-serif;
+  font-size: 40px;
+  text-align: center;
+
+}
+.about .container1 .col-4 img
+{
+  margin-right: 70px;
+  margin-left: 50px;
+  border-radius: 15%;
+  height: 20vh;
+}
+/* ----------------SERVICES------------------ */
+.services
+{
+  margin-left: 50px;
+}
+.services .tit
+{
+  font-size: 60px;
+}
+.web{
+  margin-right:10px;
+  background-color: grey;
+  width: 30%;
+  display: inline-block;
+  flex-wrap: wrap;
+}
+.web .h2
+{
+  color: black;
+  margin-left: 20px;
+}
+.web p{
+  font-size: 13px;
+  margin: 0 20px;
+  font-family: sans-serif;
+  padding-bottom: 10px;
+}
+.web a{
+  padding-left: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.service-list .web i{
+  font-size: 50px;
+  padding: 20px 20px 0 20px;
+}
+.service-list .web
+{
+  transition: background 0.5s,transform 0.5s;
+  border-radius: 15px;
+}
+.service-list .web:hover
+{
+  background: #ff004f;
+  transform: translateY(-6px);
+}
+.service-list
+{
+  margin-top: 20px;
+}
+/* -------------------contact--------------------- */
+/* .pp
+{
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+.h1
+{
+  margin-bottom: 10px;
+}
+.contact
+{
+  margin-top: 10%;
+  display: flex;
+  margin-left: 50px;
+}
+.contact .col-1
+{
+  flex-basis: 40%;
+}
+.contact .col-1 i
+{
+  color: #ff004f;
+}
+.contact .col-1 a
+{
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 10px;
+  color: #ababab;
+}
+.contact .col-1 a:hover
+{
+  color: #ff004f;
+  transform: translateY(-5px);
+}
+.btn
+{
+  border-radius: 10px;
+  padding: 10px 25px;
+  background-color: #ff004f;
+  border: 2px solid #ff004f;
+}
+.contact .col-2
+{
+  width: 50%;
+}
+form input,form textarea
+{
+  width: 90%;
+  background: #262626;
+  padding: 15px;
+  margin: 15px 0;
+  color: #fff;
+  border-radius: 15px;
+}
+.copyrights
+{
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+  padding: 25px 0;
+  background-color: #262626;
+  font-weight: 300;
+
+}
+.copyrights i
+{
+  color: #ff004f
+}
